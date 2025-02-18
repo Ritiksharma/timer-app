@@ -1,7 +1,7 @@
 import React from 'react';
-import TimerItem  from './TimerItem';
-import { useTimerStore } from '../store/useTimerStore';
-import { EmptyState } from './EmptyState';
+import TimerItem  from './TimerItem.tsx';
+import { useTimerStore } from '../store/useTimerStore.ts';
+import { EmptyState } from './EmptyState.tsx';
 
 export const TimerList: React.FC = () => {
   const { timers } = useTimerStore();

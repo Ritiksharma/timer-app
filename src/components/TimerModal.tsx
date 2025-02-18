@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import ModalButtons from './ModalButtons';
-import { Timer } from './AddTimerModal';
+import ModalButtons from './ModalButtons.tsx';
+import { Timer } from './AddTimerModal.tsx';
 import { toast, Toaster } from 'sonner';
 
 interface TimerModalProps {
