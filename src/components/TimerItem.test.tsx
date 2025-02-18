@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, test, expect, vi } from 'vitest';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
-import mockStore from '../store/mockStore';
+import mockStore from '../store/mockStore.ts';
 import TimerItem from './TimerItem.tsx';
 
 const timer = {
