@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { X, Clock } from 'lucide-react';
-import { useTimerStore } from '../store/useTimerStore';
-import { validateTimerForm } from '../utils/validation';
+import { useTimerStore } from '../store/useTimerStore.ts';
+import { validateTimerForm } from '../utils/validation.ts';
 
 interface AddTimerModalProps {
   isOpen: boolean;
@@ -54,7 +54,6 @@ const AddTimerModal: React.FC<AddTimerModalProps> = ({ isOpen, onClose }) => {
     
     addTimer({
       title: title.trim(),
-      name: title.trim(), // Assuming name is the same as title
       description: description.trim(),
       duration: totalSeconds,
       remainingTime: totalSeconds,

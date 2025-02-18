@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { X, Clock } from 'lucide-react';
-import { useTimerStore } from '../store/useTimerStore';
-import { validateTimerForm } from '../utils/validation';
-import { Timer } from '../types/timer';
+import { useTimerStore } from '../store/useTimerStore.ts';
+import { validateTimerForm } from '../utils/validation.ts';
+import { Timer } from '../types/timer.ts';
 
 interface EditTimerModalProps {
   isOpen: boolean;
