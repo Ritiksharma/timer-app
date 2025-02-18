@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit';
-import { Timer } from '../types/timer';
+import { Timer } from '../types/timer.ts';
 
 export const addTimer = createAction<Omit<Timer, 'id' | 'createdAt'>>('ADD_TIMER');
 export const deleteTimer = createAction<string>('DELETE_TIMER');

@@ -1,5 +1,5 @@
 import { describe, it, beforeEach, afterEach, expect, vi } from 'vitest';
-import { TimerAudio } from './audio';
+import { TimerAudio } from './audio.ts';
 
 describe('TimerAudio', () => {
   let timerAudio: TimerAudio;

@@ -1,6 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit';
-import { addTimer, deleteTimer, toggleTimer, updateTimer, restartTimer, editTimer } from './useTimerStore';
-import { Timer }  from '../types/timer';
+import { addTimer, deleteTimer, toggleTimer, updateTimer, restartTimer, editTimer } from './useTimerStore.ts';
+import { Timer }  from '../types/timer.ts';
 
 const initialState: Timer[] = [];
 

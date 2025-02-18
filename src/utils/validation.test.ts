@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { validateTitle, validateDuration } from './validation';
+import { validateTitle, validateDuration } from './validation.ts';
 
 describe('Validation Tests', () => {
   test('validateTitle should return true for non-empty title', () => {
