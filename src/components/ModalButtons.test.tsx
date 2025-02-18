@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import ModalButtons from './ModalButtons';
+import ModalButtons from './ModalButtons.tsx';
 import { describe, test, expect, vi } from 'vitest';
 
 describe('ModalButtons Component', () => {
