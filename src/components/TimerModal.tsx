@@ -87,7 +87,7 @@ const TimerModal: React.FC<TimerModalProps> = ({ isOpen, onClose, onSubmit, init
           <ModalButtons onCancel={onClose} onSubmit={handleSubmit} isSubmitDisabled={!isTitleValid || !isTimeValid} />
         </form>
       </div>
-      <Toaster position={window.innerWidth > 768 ? 'top-right' : 'bottom-center'} />
+      <Toaster position={globalThis.innerWidth > 768 ? 'top-right' : 'bottom-center'} />
     </div>
   );
 };

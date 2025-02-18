@@ -17,13 +17,13 @@ interface TimerItemProps {
 const TimerItem: React.FC<TimerItemProps> = ({ timer, onToggle }) => {
   const { toggleTimer, deleteTimer, updateTimer, restartTimer } = useTimerStore();
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
-  const intervalRef = useRef<number | null>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const timerAudio = TimerAudio.getInstance();
   const hasEndedRef = useRef(false);
 
   useEffect(() => {
     if (timer.isRunning) {
-      intervalRef.current = window.setInterval(() => {
+      intervalRef.current = setInterval(() => {
         updateTimer(timer.id);
         
         if (timer.remainingTime <= 1 && !hasEndedRef.current) {
