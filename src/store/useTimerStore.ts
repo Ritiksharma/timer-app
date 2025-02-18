@@ -65,7 +65,7 @@ export const {
 } = timerSlice.actions;
 
 import { useDispatch, useSelector } from 'react-redux';
-import { Timer } from './timerTypes';
+import { Timer }  from '../types/timer.ts';
 
 
 
