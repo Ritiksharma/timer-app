@@ -3,7 +3,7 @@ import { describe, test, expect, vi } from 'vitest';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import mockStore from '../store/mockStore';
-import TimerItem from './TimerItem';
+import TimerItem from './TimerItem.tsx';
 
 const timer = {
   id: '1',
